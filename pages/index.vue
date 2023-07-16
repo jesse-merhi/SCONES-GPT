@@ -53,15 +53,23 @@ const sendPrompt = async () => {
 
 <template>
 	<div class="max-w-xl mx-auto text-black">
-		<h2 class="my-8 text-4xl font-bold text-center text-black">SecSoc SCONES Filling Rater </h2>
-		<hr class="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700">
-		<div class="my-8">
-			<p> Try your luck and send a message to Hash our professional scone eating cat,
+		<h2 class="my-3 text-4xl font-bold text-center text-black">SecSoc SCONES Filling Rater </h2>
+		<hr class="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700">
+		<div class="my-2">
+			<p class="p-1.5"> Try your luck and send a message to Hash our professional scone eating cat,
 				and based on the filling, its flavour and type, Hash will automatically give
 				it a rating from 1-10.</p>
-			<p> If you are lucky and Hash really likes it, you might recieve a special surprise in return</p>
+			<p class="p-1.5"> If you are lucky and Hash really likes it, you might recieve a special surprise in return</p>
+			<div class="bg-[#ff1a1a] rounded-lg p-2 text-white flex align-stretch align-middle ">
+				<div class="text-4xl pr-2">⚠️
+				</div>
+				<div>Note: Hash is a forgetful cat - he doesnt remember what
+					you have
+					asked in previous messages.
+				</div>
+			</div>
 		</div>
-		<hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+		<hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
 		<div class="max-w-xl mx-auto">
 			<div class="bg-white rounded-md shadow h-[60vh] flex flex-col justify-between">
 				<div class="h-full overflow-auto chat-messages">
