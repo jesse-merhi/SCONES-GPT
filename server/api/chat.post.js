@@ -61,7 +61,7 @@ export default defineEventHandler(async (event) => {
 
 	let result = res.choices[0].message.content;
 	if (result === "10") {
-		result = "Woow that jam is PURRFECT#! Here is your discount code for 5% off merch!\nH4SHL1KESJ4M"
+		result = "Woow that jam is PURRFECT#! Here is your discount code for 5% off merch! Code: H4SHL1KESJ4M"
 	}
 
 	return {
