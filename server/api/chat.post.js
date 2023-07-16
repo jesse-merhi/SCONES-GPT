@@ -31,8 +31,6 @@ export default defineEventHandler(async (event) => {
 		to jam and jam fillings.For example, lets say the person enters the perfect filling, you will then simply respond:
 
 			10
-
-		3. If the message sent doesnt seem to be a scone filling option, then tell the user that and tell them to enter one.
 		`,
 	}, {
 		"role": "user",
@@ -48,11 +46,6 @@ export default defineEventHandler(async (event) => {
 		body: JSON.stringify({
 			model: 'gpt-3.5-turbo',
 			messages: messages,
-			temperature: 0,
-			max_tokens: 64,
-			top_p: 1.0,
-			frequency_penalty: 0.0,
-			presence_penalty: 0.0,
 		})
 	});
 
