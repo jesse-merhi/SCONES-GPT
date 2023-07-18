@@ -53,8 +53,8 @@ export default defineEventHandler(async (event) => {
 	const res = await req.json();
 
 	let result = res.choices[0].message.content;
-	if (result === "10") {
-		result = "Woow that jam is PURRFECT#! Here is your discount code for 5% off merch! Code: H4SHL1KESJ4M"
+	if (result.trim() === "10") {
+		result = "Woow that jam is PURRFECT#! SCONES{H4SHL1KESJ4M}"
 	}
 
 	return {
